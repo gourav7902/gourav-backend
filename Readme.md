@@ -35,3 +35,5 @@ error handling
 # https://chatgpt.com/share/6970bf41-c31c-8005-a900-51fc696462a3
 # use bcrypt.js (bcrypt.js ek JavaScript library hai jo password ko secure tareeke se hash karne ke kaam aati hai.
 Simple words me: password ko directly save nahi karte, balki uska encrypted (hashed) version database me store karte hain 🔐)
+# npm i jsonwebtoken
+# pre middleware
