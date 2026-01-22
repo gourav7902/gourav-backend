@@ -37,3 +37,9 @@ error handling
 Simple words me: password ko directly save nahi karte, balki uska encrypted (hashed) version database me store karte hain 🔐)
 # npm i jsonwebtoken
 # pre middleware
+# cloudnary using for file upload (npm install cloudinary)
+# then multer use for file upload (npm install multer)
+# import fs from "fs" //fs is file system it help to read wirte
+
+
+
