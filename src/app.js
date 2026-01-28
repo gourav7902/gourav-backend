@@ -4,7 +4,7 @@ import cookieParser from "cookie-parser";
 const app = express();
 app.use(cors({
     origin:process.env.CORS_ORIGIN,
-    Credential:true
+    Credentials:true
 })) //use method use for middleware configure
 app.use(express.json({limit:"16kb"}));//json accept kar raha h with limit ke sath ki hmko itahi json request lena h
 app.use(express.urlencoded({extended: true,limit:"16kb"}))//for url configure
