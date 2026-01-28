@@ -11,8 +11,18 @@ import fs from "fs" //fs is file system it help to read wirte
         try{
             if(!localFilePath) return null
         //upload the file on cloudinary
-            
-        }catch(error){
+        const response=await cloudinary.uploader
+        .upload(localFilePath,{
+            resource_type:"auto"
+        })
+        //file has been uploded successfully
+        console.log("file is uploded on clodinary",response.url);
+        return response;
 
+        }catch(error){
+            fs.unlinkSync(localFilePath) //remove the locally 
+            // saved temporary file
+            return null;
         }
     }
+    export {upoladOnCloudinary}

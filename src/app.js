@@ -11,4 +11,11 @@ app.use(express.urlencoded({extended: true,limit:"16kb"}))//for url configure
 app.use(express.static("public"))//file photo koe bhi access kar le
 app.use(cookieParser())
 
+
+
+///routes
+import userRouter from './routes/user.routes.js'
+//routes declaration
+app.use("/api/v1/user",userRouter)
+
 export default app;
